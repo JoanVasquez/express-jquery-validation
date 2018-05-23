@@ -10,21 +10,21 @@
 
   <div class="container">
     {{#if errors}}
-    <div class="alert alert-danger alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <h4 class="alert-heading">Errors!</h4>
-      {{#each errors}}
-      <p><strong><i class="fas fa-exclamation-circle"></i> {{this.param}}: </strong> {{this.msg}}</p>
-      {{/each}}
-    </div>
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4 class="alert-heading">Errors!</h4>
+        {{#each errors}}
+          <p><strong><i class="fas fa-exclamation-circle"></i> {{this.param}}: </strong> {{this.msg}}</p>
+        {{/each}}
+      </div>
     {{/if}}
 
     {{#if isUserRegistered}}
-    <div class="alert alert-success alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <h4 class="alert-heading">Message!</h4>
-      <p><strong><i class="fas fa-check"></i></strong> {{isUserRegistered}}</p>
-    </div>
+      <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4 class="alert-heading">Message!</h4>
+        <p><strong><i class="fas fa-check"></i></strong> {{isUserRegistered}}</p>
+      </div>
     {{/if}}
 
     <div class="row">
